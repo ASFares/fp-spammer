@@ -22,6 +22,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if(message.content === '-حولي'){
+        message.channel.send('#credits @Faresヅ#2420 10')
+    }
+});
+
+client.on('message', message => {
     if(message.content === '-مبلغ'){
         message.channel.send('#credits')
     }
